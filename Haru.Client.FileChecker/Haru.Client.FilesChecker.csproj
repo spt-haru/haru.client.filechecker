@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net471</TargetFramework>
+    <LangVersion>6.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Private="False" Include="Assembly-CSharp" HintPath="..\references\eft\Assembly-CSharp.dll" />
+    <Reference Private="False" Include="UnityEngine" HintPath="..\references\eft\UnityEngine.dll" />
+    <Reference Private="False" Include="UnityEngine.CoreModule" HintPath="..\references\eft\UnityEngine.CoreModule.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Haru.Client.Shared" HintPath="..\references\haru\Haru.Client.Shared.dll" />
+    <Reference Include="Haru.FileChecker" HintPath="..\references\haru\Haru.FileChecker.dll" />
+    <Reference Include="Haru.IO" HintPath="..\references\haru\Haru.IO.dll" />
+    <Reference Include="Haru.Reflection" HintPath="..\references\haru\Haru.Reflection.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference ExcludeAssets="runtime" PrivateAssets="All" Include="BepInEx.Core" Version="5.4.21" />
+    <PackageReference ExcludeAssets="runtime" PrivateAssets="All" Include="Newtonsoft.Json" Version="13.0.2" />
+  </ItemGroup>
+
+</Project>
